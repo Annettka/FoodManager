@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">Food Manager</string>
+    <string name="name">Food Manager</string>
+    <string name="submit_product">Submit Product</string>
+    <string name="my_products">My Products</string>
+    <string name="choose_category">Choose category</string>
+    <string name="add_product_dialog_title">Please enter a new product</string>
+    <string name="add_product_name">Product name</string>
+    <string name="add_enter_your_comment">Enter your comment</string>
+    <string name="toast_empty_product">The product cannot be saved, \n
+        please fill in the required fields</string>
+    <string name="toast_existing_product">This product is already exist</string>
+    <string name="channel_name">Expiration</string>
+    <string name="channel_description">Expiring product</string>
+    <string name="creation_date">Creation date:</string>
+    <string name="expiration_date">Expiration date:</string>
+    <string name="notification_settings_title">
+        How many days in advance to remind \n
+        (0 - at the last)
+    </string>
+    <string name="days">days</string>
+    <string name="choose_time_of_notification">Choose time of notification</string>
+    <string name="enable_notification">Enable notification</string>
+    <string name="notification_title">Product expires:</string>
+    <string name="savechanges" translatable="false">saveChanges</string>
+
+
+    <string-array name="product_categories">
+        <item>Ready meals</item>
+        <item>Semi-finished products</item>
+        <item>Fruits and vegetables</item>
+        <item>Bakery and confectionery</item>
+        <item>Milk products, cheese, eggs</item>
+        <item>Meat</item>
+        <item>Fowl</item>
+        <item>Fish, caviar, seafood</item>
+        <item>Meat gastronomy</item>
+        <item>Juices, drinks, water</item>
+        <item>Chocolate, candy, cookies and other sweets</item>
+        <item>Grocery</item>
+        <item>Frozen food</item>
+        <item>Baby food</item>
+        <item>Healthy and sports nutrition</item>
+        <item>Pet supplies</item>
+    </string-array>
+
+    <string-array name="ready_meals_subcategories">
+        <item>Salads and cold appetizers</item>
+        <item>Cutlets, cabbage rolls, chops</item>
+        <item>Sushi</item>
+        <item>Bakery products and pancakes</item>
+        <item>Side dishes</item>
+        <item>Smoked food and grill</item>
+        <item>Sauces</item>
+        <item>Rolls and meatloaves</item>
+    </string-array>
+
+    <string-array name="semi_finished_products_subcategories">
+        <item>Kebabs</item>
+        <item>Marinated poultry products</item>
+        <item>Sausages</item>
+        <item>Cutlets and cabbage rolls</item>
+        <item>Minced meat</item>
+        <item>Pickled vegetables</item>
+        <item>Flour semi-finished products</item>
+    </string-array>
+
+    <string-array name="fruits_and_vegetables_subcategories">
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Mushrooms</item>
+        <item>Berries</item>
+        <item>Greens and salads</item>
+    </string-array>
+
+    <string-array name="bakery_and_confectionery_subcategories">
+        <item>Bread and pone</item>
+        <item>Cookies, waffles, gingerbread</item>
+        <item>Cakes</item>
+        <item>Bakery, flour sweets</item>
+        <item>Rusks, bagels</item>
+        <item>Other confectionery</item>
+    </string-array>
+
+    <string-array name="milk_products_cheese_eggs_subcategories">
+        <item>Milk</item>
+        <item>Kefir, fermented milk products</item>
+        <item>Butter, margarine, fats</item>
+        <item>Curd products</item>
+        <item>Sour cream and cream</item>
+        <item>Yoghurt and desserts</item>
+        <item>Ice cream</item>
+        <item>Cheese</item>
+        <item>Eggs</item>
+    </string-array>
+
+    <string-array name="meat_subcategories">
+        <item>Pork</item>
+        <item>Beef</item>
+        <item>Mutton</item>
+        <item>Rabbit</item>
+        <item>Offal</item>
+    </string-array>
+
+    <string-array name="fowl_subcategories">
+        <item>Turkey</item>
+        <item>Chicken</item>
+        <item>Duck</item>
+    </string-array>
+
+    <string-array name="fish_caviar_seafood_subcategories">
+        <item>Caviar</item>
+        <item>Sea cabbage</item>
+        <item>Fish snacks</item>
+        <item>Fish preserves</item>
+        <item>Canned fish</item>
+        <item>Crab sticks</item>
+        <item>Frozen fish</item>
+        <item>Salty fish</item>
+        <item>Smoked fish</item>
+        <item>Fish snacks, stockfish, dried fish</item>
+        <item>Seafood</item>
+        <item>Fish semi-finished products</item>
+    </string-array>
+
+    <string-array name="meat_gastronomy_subcategories">
+        <item>Sausages</item>
+        <item>Meat products</item>
+        <item>Pates, other meat products</item>
+    </string-array>
+
+    <string-array name="juices_drinks_water_subcategories">
+        <item>Water</item>
+        <item>Kvass</item>
+        <item>Juices, nectars, fruit drinks</item>
+        <item>Beverages</item>
+        <item>Energy drinks</item>
+        <item>Coffee</item>
+        <item>Tea</item>
+        <item>Other drinks</item>
+    </string-array>
+
+    <string-array name="chocolate_candy_cookies_and_other_sweets_subcategories">
+        <item>Chocolate</item>
+        <item>Candy</item>
+        <item>Chewing gum</item>
+        <item>Eastern sweets</item>
+        <item>Chocolate and peanut butter</item>
+        <item>Other sweets</item>
+    </string-array>
+
+    <string-array name="grocery_subcategories">
+        <item>Flour, baking mix</item>
+        <item>Макаронные изделия</item>
+        <item>Pasta</item>
+        <item>Flakes, porridge, muesli, breakfast cereals</item>
+        <item>Sugar, salt, spices, confectionery additives</item>
+        <item>Vegetable oil, vinegar</item>
+        <item>Mayonnaise, sauces, ketchup, mustard, horseradish</item>
+        <item>Fast food products</item>
+        <item>Chips, croutons, popcorn</item>
+        <item>Nuts, dried fruits, seeds</item>
+        <item>Canned goods</item>
+        <item>Oriental food products</item>
+    </string-array>
+
+    <string-array name="frozen_food_subcategories">
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Mushrooms</item>
+        <item>Berries</item>
+        <item>Main dishes</item>
+        <item>Ready-to-cook food</item>
+        <item>Food ice</item>
+        <item>Pizza, dough</item>
+    </string-array>
+
+    <string-array name="baby_food_subcategories">
+        <item>Food fusion for kids, cereals</item>
+        <item>Canned food, puree</item>
+        <item>Water, juices, drinks</item>
+        <item>Cookies</item>
+        <item>Other products</item>
+    </string-array>
+    <string-array name="healthy_and_sports_nutrition_subcategories">
+        <item>Confectionery</item>
+        <item>Grocery</item>
+        <item>Sets for slimming</item>
+        <item>Diet drinks</item>
+        <item>Gluten free products</item>
+        <item>Soy products</item>
+        <item>Low-calorie foods</item>
+        <item>Low protein foods</item>
+        <item>Supplements for athletes</item>
+        <item>Protein-containing foods</item>
+    </string-array>
+    <string-array name="pet_supplies_subcategories">
+        <item>Cat food</item>
+        <item>Dog food</item>
+        <item>Food for birds, fish, rodents</item>
+        <item>Treats for cats</item>
+        <item>Treats for dogs</item>
+    </string-array>
+
+
+</resources>

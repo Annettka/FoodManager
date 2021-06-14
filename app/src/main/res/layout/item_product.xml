@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="product"
+            type="by.it.academy.foodmanager.presentation.models.ProductPresent" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/green"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/product_photo"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic__photo"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/tv_product_name"
+                    style="@style/TextAppearance.App.Headline6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@{product.name}"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_edit_product"
+                    app:layout_constraintStart_toEndOf="@id/product_photo"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_product_comment"
+                    style="@style/TextAppearance.App.Subtitle1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@{product.comment}"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_edit_product"
+                    app:layout_constraintStart_toEndOf="@id/product_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_product_name"/>
+
+                <ImageView
+                    android:id="@+id/btn_edit_product"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_edit"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_delete_product"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/btn_delete_product"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_delete_forever"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_edit_product" />
+
+
+                <TextView
+                    android:id="@+id/item_product_creation_date"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:gravity="center"
+                    android:text="@{product.creationDate}"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/dash"
+                    app:layout_constraintStart_toEndOf="@id/product_photo"/>
+
+                <TextView
+                    android:id="@+id/dash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/item_product_expiration_date"
+                    app:layout_constraintStart_toEndOf="@id/item_product_creation_date" />
+
+
+                <TextView
+                    android:id="@+id/item_product_expiration_date"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:gravity="center"
+                    android:text="@{product.expirationDate}"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn_delete_product"
+                    app:layout_constraintStart_toEndOf="@+id/dash"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

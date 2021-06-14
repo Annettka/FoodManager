@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="editableProduct"
+            type="by.it.academy.foodmanager.presentation.models.ProductPresent" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/AddProductDialogStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="32sp"
+        tools:context=".presentation.ui.fragments.EditProductDialogFragment">
+
+        <ImageView
+            android:id="@+id/btn_editable_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_editable_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@{editableProduct.name}"
+            app:layout_constraintEnd_toStartOf="@id/make_photo_editable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_editable_cancel" />
+
+        <ImageView
+            android:id="@+id/make_photo_editable"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_add_a_photo"
+            app:layout_constraintBottom_toBottomOf="@id/et_editable_product_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/et_editable_product_name"
+            app:layout_constraintTop_toTopOf="@id/et_editable_product_name" />
+
+        <EditText
+            android:id="@+id/et_editable_product_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@{editableProduct.comment}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_editable_product_name" />
+
+        <TextView
+            android:id="@+id/tv_editable_creation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="4dp"
+            android:text="@string/creation_date"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/et_editable_creation_date"
+            app:layout_constraintEnd_toStartOf="@id/et_editable_creation_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_editable_product_comment" />
+
+
+        <EditText
+            android:id="@+id/et_editable_creation_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textAlignment="center"
+            android:text="@{editableProduct.creationDate}"
+            app:layout_constraintEnd_toEndOf="@+id/et_editable_expiration_date"
+            app:layout_constraintStart_toEndOf="@id/tv_editable_creation"
+            app:layout_constraintTop_toBottomOf="@+id/et_editable_product_comment" />
+
+        <TextView
+            android:id="@+id/tv_editable_expiration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="4dp"
+            android:text="@string/expiration_date"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/et_editable_expiration_date"
+            app:layout_constraintEnd_toStartOf="@id/et_editable_expiration_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_editable_creation" />
+
+        <EditText
+            android:id="@+id/et_editable_expiration_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textAlignment="center"
+            android:text="@{editableProduct.expirationDate}"
+            app:layout_constraintEnd_toEndOf="@id/edit_expiration_date"
+            app:layout_constraintStart_toEndOf="@id/tv_editable_expiration"
+            app:layout_constraintTop_toBottomOf="@+id/et_editable_creation_date" />
+
+        <ImageView
+            android:id="@+id/edit_expiration_date"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_calendar"
+            app:layout_constraintBottom_toBottomOf="@id/et_editable_expiration_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/et_editable_expiration_date"
+            app:layout_constraintTop_toTopOf="@id/et_editable_expiration_date" />
+
+
+        <LinearLayout
+            android:id="@+id/notification_settings_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/fab_save_changes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_editable_expiration">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="285dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/notification_settings_title"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_editable_days_number"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:text="@string/days"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_gravity="bottom"
+                    android:layout_width="285dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/choose_time_of_notification"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_editable_notification_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_save_changes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_done"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notification_settings_field"
+            android:contentDescription="@string/savechanges" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

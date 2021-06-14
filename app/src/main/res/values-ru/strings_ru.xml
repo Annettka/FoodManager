@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name">Менеджер Продуктов</string>
+    <string name="name">Менеджер Продуктов</string>
+    <string name="submit_product">Внести продукт</string>
+    <string name="my_products">Мои продукты</string>
+    <string name="choose_category">Выберите категорию</string>
+    <string name="add_product_dialog_title">Введите новый продукт</string>
+    <string name="add_product_name">Название продукта</string>
+    <string name="add_enter_your_comment">Комментарий</string>
+    <string name="creation_date">Дата создания:</string>
+    <string name="expiration_date">Годен до:</string>
+    <string name="toast_empty_product">
+        Продукт не может быть сохранен, \n
+        заполните обязательные поля</string>
+    <string name="toast_existing_product">Данный продукт уже существует</string>
+    <string name="channel_name">Истекает срок годности</string>
+    <string name="channel_description">Продукт с истекающим сроком годности</string>
+    <string name="notification_settings_title">
+        За сколько дней уведомить \n
+        (0 - в последний)
+    </string>
+    <string name="days">дней</string>
+    <string name="choose_time_of_notification">Выберите время уведомления</string>
+    <string name="enable_notification">Включить уведомление</string>
+    <string name="notification_title"> Истекает срок годности продукта:</string>
+
+    <string-array name="product_categories">
+        <item>Готовые блюда</item>
+        <item>Полуфабрикаты</item>
+        <item>Овощи и фрукты</item>
+        <item>Хлебобулочные и кондитерские изделия</item>
+        <item>Молочные продукты, сыр, яйца</item>
+        <item>Мясо</item>
+        <item>Птица</item>
+        <item>Рыба, икра, морепродукты</item>
+        <item>Мясная гастрономия</item>
+        <item>Соки, напитки, вода</item>
+        <item>Шоколад, конфеты, печенье и другие сладости</item>
+        <item>Бакалея</item>
+        <item>Замороженные продукты</item>
+        <item>Детское питание</item>
+        <item>Здоровое и спортивное питание</item>
+        <item>Зоотовары</item>
+    </string-array>
+
+    <string-array name="ready_meals_subcategories">
+        <item>Салаты и холодные закуски</item>
+        <item>Котлеты, голубцы, отбивные</item>
+        <item>Суши</item>
+        <item>Выпечка и блины</item>
+        <item>Гарниры</item>
+        <item>Копчености и гриль</item>
+        <item>Соусы</item>
+        <item>Рулеты и руляды</item>
+    </string-array>
+
+    <string-array name="semi_finished_products_subcategories">
+        <item>Шашлыки</item>
+        <item>Маринованные изделия из мяса птицы</item>
+        <item>Колбасы</item>
+        <item>Котлеты и голубцы</item>
+        <item>Фарши</item>
+        <item>Маринованные овощи</item>
+        <item>Мучные полуфабрикаты</item>
+    </string-array>
+
+    <string-array name="fruits_and_vegetables_subcategories">
+        <item>Овощи</item>
+        <item>Фрукты</item>
+        <item>Грибы</item>
+        <item>Ягоды</item>
+        <item>Зелень и салаты</item>
+    </string-array>
+
+    <string-array name="bakery_and_confectionery_subcategories">
+        <item>Хлеб и сдоба</item>
+        <item>Печенье, вафли, пряники</item>
+        <item>Торты, пирожные</item>
+        <item>Выпечка, мучные сладости</item>
+        <item>Сухари, сушки</item>
+        <item>Другие кондитерские изделия</item>
+    </string-array>
+
+    <string-array name="milk_products_cheese_eggs_subcategories">
+        <item>Молоко</item>
+        <item>Кефир, кисломолочные изделия</item>
+        <item>Масло, маргарин, жиры</item>
+        <item>Творожные продукты</item>
+        <item>Сметана и сливки</item>
+        <item>Йогурт и десерты</item>
+        <item>Мороженое</item>
+        <item>Сыр</item>
+        <item>Яйца</item>
+    </string-array>
+
+    <string-array name="meat_subcategories">
+        <item>Свинина</item>
+        <item>Говядина</item>
+        <item>Баранина</item>
+        <item>Кролик</item>
+        <item>Субпродукты</item>
+    </string-array>
+
+    <string-array name="fowl_subcategories">
+        <item>Индейка</item>
+        <item>Куры, цыплята</item>
+        <item>Утка</item>
+    </string-array>
+
+    <string-array name="fish_caviar_seafood_subcategories">
+        <item>Икра</item>
+        <item>Капуста морская</item>
+        <item>Рыбные закуски</item>
+        <item>Рыбные пресервы</item>
+        <item>Рыбные консервы</item>
+        <item>Крабовые палочки</item>
+        <item>Рыба свежемороженая</item>
+        <item>Рыба соленая</item>
+        <item>Рыба копченая</item>
+        <item>Рыбные снеки, рыба вяленая, сушеная</item>
+        <item>Морепродукты</item>
+        <item>Рыбные полуфабрикаты</item>
+    </string-array>
+
+    <string-array name="meat_gastronomy_subcategories">
+        <item>Колбасные изделия</item>
+        <item>Мясные изделия</item>
+        <item>Паштеты, прочие изделия из мясопродуктов</item>
+    </string-array>
+
+    <string-array name="juices_drinks_water_subcategories">
+        <item>Вода</item>
+        <item>Квас</item>
+        <item>Соки, нектары, морсы</item>
+        <item>Напитки</item>
+        <item>Энергетические напитки</item>
+        <item>Кофе</item>
+        <item>Чай</item>
+        <item>Другие напитки</item>
+    </string-array>
+
+    <string-array name="chocolate_candy_cookies_and_other_sweets_subcategories">
+        <item>Шоколад</item>
+        <item>Конфеты</item>
+        <item>Жевательная резинка</item>
+        <item>Восточные сладости</item>
+        <item>Шоколадные и арахисовые пасты</item>
+        <item>Другие сладости</item>
+    </string-array>
+
+    <string-array name="grocery_subcategories">
+        <item>Мука, смеси для выпечки</item>
+        <item>Макаронные изделия</item>
+        <item>Крупы и бобовые</item>
+        <item>Хлопья, каши, мюсли, сухие завтраки</item>
+        <item>Сахар, соль, приправы, кондитерские добавки</item>
+        <item>Масло растительное, уксус</item>
+        <item>Майонезы, соусы, кетчуп, горчица, хрен</item>
+        <item>Продукты быстрого приготовления</item>
+        <item>Чипсы, сухарики, попкорн, сушеная рыба</item>
+        <item>Орехи, сухофрукты, семечки</item>
+        <item>Консервы</item>
+        <item>Товары восточной кухни</item>
+    </string-array>
+
+    <string-array name="frozen_food_subcategories">
+        <item>Овощи</item>
+        <item>Грибы</item>
+        <item>Фрукты</item>
+        <item>Ягоды</item>
+        <item>Вторые блюда</item>
+        <item>Полуфабрикаты</item>
+        <item>Лёд пищевой</item>
+        <item>Пиццы, тесто</item>
+    </string-array>
+
+    <string-array name="baby_food_subcategories">
+        <item>Смеси, каши</item>
+        <item>Консервы, пюре</item>
+        <item>Вода, соки, напитки</item>
+        <item>Печенье</item>
+        <item>Другое</item>
+    </string-array>
+    <string-array name="healthy_and_sports_nutrition_subcategories">
+        <item>Кондитерские изделия</item>
+        <item>Бакалея</item>
+        <item>Наборы для похудения</item>
+        <item>Напитки диетические</item>
+        <item>Продукты без глютена</item>
+        <item>Соевые продукты</item>
+        <item>Низкокалорийные продукты</item>
+        <item>Низкобелковые продукты</item>
+        <item>Спортивное питание</item>
+        <item>Протеиносодержащие продукты</item>
+    </string-array>
+    <string-array name="pet_supplies_subcategories">
+        <item>Корма для кошек</item>
+        <item>Корма для собак</item>
+        <item>Корма для птиц, рыбок, грызунов</item>
+        <item>Лакомства для кошек</item>
+        <item>Лакомства для собак</item>
+    </string-array>
+</resources>
