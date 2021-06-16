@@ -48,7 +48,11 @@
             app:destination="@id/submitProductFragment" />
         <action
             android:id="@+id/action_myProductsFragment_to_editProductDialogFragment"
-            app:destination="@id/editProductDialogFragment" />
+            app:destination="@id/editProductDialogFragment"
+            app:enterAnim="@anim/slide_from_bottom"
+            app:exitAnim="@anim/slide_to_top"
+            app:popEnterAnim="@anim/slide_from_top"
+            app:popExitAnim="@anim/slide_to_bottom" />
     </fragment>
     <fragment
         android:id="@+id/addProductFragment"
@@ -61,7 +65,8 @@
             app:enterAnim="@anim/slide_to_bottom"
             app:exitAnim="@anim/slide_from_top"
             app:popEnterAnim="@anim/slide_from_bottom"
-            app:popExitAnim="@anim/slide_to_top" />
+            app:popExitAnim="@anim/slide_to_top"
+            app:popUpTo="@id/mainFragment" />
         <argument
             android:name="productCategory"
             app:argType="string" />
@@ -90,7 +95,12 @@
         android:label="EditProductDialogFragment" >
         <action
             android:id="@+id/action_editProductDialogFragment_to_myProductsFragment"
-            app:destination="@id/myProductsFragment" />
+            app:destination="@id/myProductsFragment"
+            app:enterAnim="@anim/slide_from_top"
+            app:exitAnim="@anim/slide_to_bottom"
+            app:popEnterAnim="@anim/slide_from_bottom"
+            app:popExitAnim="@anim/slide_to_top"
+            app:popUpTo="@id/mainFragment" />
         <argument android:name="product"
             app:argType="by.it.academy.foodmanager.presentation.models.ProductPresent" />
     </fragment>

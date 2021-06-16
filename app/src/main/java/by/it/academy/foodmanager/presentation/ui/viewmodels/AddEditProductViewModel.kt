@@ -56,7 +56,6 @@ class AddEditProductViewModel(
 
     fun insertProduct(product: ProductPresent) = viewModelScope.launch(Dispatchers.IO) {
         repository.insertProduct(ProductDataMapper().map(product))
-//        id++
     }
 
     fun updateProduct(product: ProductPresent) = viewModelScope.launch(Dispatchers.IO) {

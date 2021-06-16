@@ -8,9 +8,9 @@ import android.graphics.Color
 import android.os.Build
 import by.it.academy.foodmanager.data.constants.CHANNEL_ID
 import by.it.academy.foodmanager.data.constants.CHANNEL_NAME
-import by.it.academy.foodmanager.presentation.di.databaseModule
-import by.it.academy.foodmanager.presentation.di.repositoryModule
-import by.it.academy.foodmanager.presentation.di.viewModelModule
+import by.it.academy.foodmanager.di.databaseModule
+import by.it.academy.foodmanager.di.repositoryModule
+import by.it.academy.foodmanager.di.viewModelModule
 import by.it.academy.foodmanager.presentation.ui.MainActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob

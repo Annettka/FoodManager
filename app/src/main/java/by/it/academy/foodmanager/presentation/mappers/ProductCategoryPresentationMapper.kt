@@ -6,12 +6,14 @@ import by.it.academy.foodmanager.presentation.models.ProductCategoryPresent
 import by.it.academy.foodmanager.presentation.models.ProductSubcategoryPresent
 
 class ProductCategoryPresentationMapper {
+
     fun map(productCategoryWithSubcategories: List<ProductCategoryWithProductSubcategories>): List<ProductCategoryPresent> {
         val result: MutableList<ProductCategoryPresent> = mutableListOf()
         for (index in productCategoryWithSubcategories.indices) {
             result.add(
                 ProductCategoryPresent(
                     categoryName = productCategoryWithSubcategories[index].productCategory.categoryName,
+                    categoryIcon = productCategoryWithSubcategories[index].productCategory.categoryIcon,
                     subcategories = mapList(productCategoryWithSubcategories[index].productSubcategories)
                 )
             )

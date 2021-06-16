@@ -1,5 +1,7 @@
 package by.it.academy.foodmanager.presentation.ui.adapters
 
+import android.content.Context
+import android.view.ContextMenu
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
@@ -23,7 +25,7 @@ class MyProductsAdapter(val viewModel: MyProductsViewModel) :
     ): MyProductsViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val binding = ItemProductBinding.inflate(inflater, parent, false)
-        return MyProductsViewHolder(binding)
+        return MyProductsViewHolder(binding, parent.context)
     }
 
     override fun onBindViewHolder(
@@ -38,7 +40,7 @@ class MyProductsAdapter(val viewModel: MyProductsViewModel) :
         return currentList.size
     }
 
-    inner class MyProductsViewHolder(private val binding: ItemProductBinding) :
+    inner class MyProductsViewHolder(private val binding: ItemProductBinding, val context: Context) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(product: Product) {
             val productPresentation = ProductPresentationMapper().map(product)
@@ -53,7 +55,8 @@ class MyProductsAdapter(val viewModel: MyProductsViewModel) :
             }
 
             binding.btnDeleteProduct.setOnClickListener {
-                viewModel.deleteProduct(product)
+                viewModel.deleteProduct(context, product)
+
             }
         }
     }

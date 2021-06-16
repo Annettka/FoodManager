@@ -165,12 +165,12 @@
     </string-array>
 
     <string-array name="frozen_food_subcategories">
-        <item>Vegetables</item>
-        <item>Fruits</item>
-        <item>Mushrooms</item>
-        <item>Berries</item>
+        <item>Frozen vegetables</item>
+        <item>Frozen fruits</item>
+        <item>Frozen mushrooms</item>
+        <item>Frozen berries</item>
         <item>Main dishes</item>
-        <item>Ready-to-cook food</item>
+        <item>Frozen ready-to-cook food</item>
         <item>Food ice</item>
         <item>Pizza, dough</item>
     </string-array>

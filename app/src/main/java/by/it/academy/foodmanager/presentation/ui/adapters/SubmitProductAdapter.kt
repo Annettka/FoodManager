@@ -7,6 +7,7 @@ import android.view.View
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.content.res.AppCompatResources.getDrawable
@@ -44,8 +45,10 @@ class SubmitProductAdapter :
 
     inner class SubmitProductViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView), View.OnClickListener {
+
         val context: Context = itemView.context
         private val tvCategoryName: TextView = itemView.findViewById(R.id.category_name)
+        private val categoryIcon: ImageView = itemView.findViewById(R.id.category_icon)
         private val linLayoutSubcategoryItems: LinearLayout =
             itemView.findViewById(R.id.subcategory_items)
 
@@ -84,6 +87,8 @@ class SubmitProductAdapter :
 
         fun bind(categoryItem: ProductCategoryPresent) {
             tvCategoryName.text = categoryItem.categoryName
+            categoryIcon.setImageResource(categoryItem.categoryIcon)
+
             val numOfSubcategoryTextViews = linLayoutSubcategoryItems.childCount
             for (index in 0 until numOfSubcategoryTextViews) {
                 val currCardView = linLayoutSubcategoryItems.getChildAt(index) as TextView

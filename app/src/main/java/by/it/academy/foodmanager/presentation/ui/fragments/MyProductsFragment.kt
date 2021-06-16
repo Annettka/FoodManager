@@ -19,6 +19,10 @@ class MyProductsFragment : Fragment() {
 
     private val myProductsViewModel: MyProductsViewModel by viewModel<MyProductsViewModel>()
 
+    companion object{
+        fun newInstance() = MyProductsFragment()
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

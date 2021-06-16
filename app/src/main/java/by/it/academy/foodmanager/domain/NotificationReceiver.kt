@@ -9,11 +9,12 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import by.it.academy.foodmanager.R
 import by.it.academy.foodmanager.data.constants.CHANNEL_ID
+import by.it.academy.foodmanager.presentation.ui.MainActivity
 import by.it.academy.foodmanager.presentation.ui.fragments.MyProductsFragment
 
 class NotificationReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
-        val mainIntent = Intent(context, MyProductsFragment::class.java)
+        val mainIntent = Intent(context, MainActivity::class.java)
         val contentIntent = PendingIntent.getActivity(context, 0, mainIntent, 0)
 
         val notification = NotificationCompat.Builder(context, CHANNEL_ID)

@@ -1,4 +1,4 @@
-package by.it.academy.foodmanager.presentation.di
+package by.it.academy.foodmanager.di
 
 
 import by.it.academy.foodmanager.data.db.ProductDatabase

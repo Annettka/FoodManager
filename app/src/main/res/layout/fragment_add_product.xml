@@ -100,10 +100,9 @@
             android:focusable="false"
             android:focusableInTouchMode="false"
             android:textAlignment="center"
-            app:layout_constraintEnd_toStartOf="@+id/edit_expiration_date"
-            app:layout_constraintStart_toEndOf="@id/tv_creation"
+            app:layout_constraintEnd_toEndOf="@+id/et_expiration_date"
+            app:layout_constraintStart_toStartOf="@+id/et_expiration_date"
             app:layout_constraintTop_toBottomOf="@+id/et_product_comment" />
-
 
 
         <TextView
@@ -155,21 +154,20 @@
             android:layout_marginHorizontal="8dp"
             android:paddingHorizontal="4dp"
             android:text="@string/enable_notification"
-            android:textSize="22sp"
             android:textAlignment="center"
+            android:textSize="22sp"
             app:layout_constraintStart_toEndOf="@id/swith_enable_notification"
-            app:layout_constraintTop_toTopOf="@id/swith_enable_notification"
-             />
+            app:layout_constraintTop_toTopOf="@id/swith_enable_notification" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/swith_enable_notification"
             android:layout_width="wrap_content"
             android:layout_height="32dp"
-            android:layout_marginTop="16dp"
             android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toStartOf="@+id/tv_enable_notification"
-            app:layout_constraintTop_toBottomOf="@id/et_expiration_date"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_expiration_date" />
 
 
         <LinearLayout
@@ -187,12 +185,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="285dp"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:text="@string/notification_settings_title"
                     android:textAlignment="viewStart"
                     android:textSize="18sp" />
@@ -218,28 +218,30 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="12dp">
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_gravity="bottom"
-                    android:layout_width="285dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
                     android:layout_marginBottom="3dp"
+                    android:layout_weight="1"
                     android:text="@string/choose_time_of_notification"
                     android:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et_notification_time"
-                    android:layout_width="match_parent"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:hint="09:00"
                     android:clickable="false"
                     android:cursorVisible="false"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
+                    android:hint="09:00"
                     android:textAlignment="center"
                     android:textSize="18sp" />
 
@@ -252,8 +254,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="8dp"
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/ic_done"

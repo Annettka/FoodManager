@@ -4,6 +4,7 @@ import java.io.Serializable
 
 data class ProductCategoryPresent(
     val categoryName: String,
+    val categoryIcon: Int,
     val subcategories: List<ProductSubcategoryPresent>
 )
 
