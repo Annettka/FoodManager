@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".presentation.ui.fragments.MainFragment">
+    tools:context=".app.presentation.ui.fragments.MainFragment">
 
     <Button
         android:id="@+id/submit_product"

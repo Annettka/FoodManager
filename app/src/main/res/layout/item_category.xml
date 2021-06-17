@@ -7,7 +7,7 @@
 
         <variable
             name="productCategory"
-            type="by.it.academy.foodmanager.data.entities.ProductCategory" />
+            type="by.it.academy.foodmanager.app.domain.models.ProductCategoryDomain" />
 
     </data>
 

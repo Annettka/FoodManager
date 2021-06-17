@@ -8,7 +8,7 @@
 
         <variable
             name="editableProduct"
-            type="by.it.academy.foodmanager.presentation.models.ProductPresent" />
+            type="by.it.academy.foodmanager.app.domain.models.ProductDomain" />
 
     </data>
 
@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginVertical="32sp"
-        tools:context=".presentation.ui.fragments.EditProductDialogFragment">
+        tools:context=".app.presentation.ui.fragments.EditProductDialogFragment">
 
         <ImageView
             android:id="@+id/btn_editable_cancel"

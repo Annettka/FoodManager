@@ -8,7 +8,7 @@
 
         <variable
             name="product"
-            type="by.it.academy.foodmanager.presentation.models.ProductPresent" />
+            type="by.it.academy.foodmanager.app.domain.models.ProductDomain" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

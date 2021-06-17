@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="by.it.academy.foodmanager.presentation.ui.fragments.MainFragment"
+        android:name="by.it.academy.foodmanager.app.presentation.ui.fragments.MainFragment"
         android:label="main_fragment"
         tools:layout="@layout/fragment_main">
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/submitProductFragment"
-        android:name="by.it.academy.foodmanager.presentation.ui.fragments.SubmitProductFragment"
+        android:name="by.it.academy.foodmanager.app.presentation.ui.fragments.SubmitProductFragment"
         android:label="submit_product_fragment"
         tools:layout="@layout/fragment_submit_product" >
         <action
@@ -40,7 +40,7 @@
     </fragment>
     <fragment
         android:id="@+id/myProductsFragment"
-        android:name="by.it.academy.foodmanager.presentation.ui.fragments.MyProductsFragment"
+        android:name="by.it.academy.foodmanager.app.presentation.ui.fragments.MyProductsFragment"
         android:label="my_products_fragment"
         tools:layout="@layout/fragment_my_products" >
         <action
@@ -56,7 +56,7 @@
     </fragment>
     <fragment
         android:id="@+id/addProductFragment"
-        android:name="by.it.academy.foodmanager.presentation.ui.fragments.AddProductFragment"
+        android:name="by.it.academy.foodmanager.app.presentation.ui.fragments.AddProductFragment"
         android:label="fragment_add_product"
         tools:layout="@layout/fragment_add_product" >
         <action
@@ -87,11 +87,11 @@
     </fragment>
     <dialog
         android:id="@+id/datePickerFragment"
-        android:name="by.it.academy.foodmanager.presentation.ui.pickers.DatePickerFragment"
+        android:name="by.it.academy.foodmanager.app.presentation.ui.pickers.DatePickerFragment"
         android:label="DatePickerFragment" />
     <fragment
         android:id="@+id/editProductDialogFragment"
-        android:name="by.it.academy.foodmanager.presentation.ui.fragments.EditProductDialogFragment"
+        android:name="by.it.academy.foodmanager.app.presentation.ui.fragments.EditProductDialogFragment"
         android:label="EditProductDialogFragment" >
         <action
             android:id="@+id/action_editProductDialogFragment_to_myProductsFragment"
@@ -102,6 +102,6 @@
             app:popExitAnim="@anim/slide_to_top"
             app:popUpTo="@id/mainFragment" />
         <argument android:name="product"
-            app:argType="by.it.academy.foodmanager.presentation.models.ProductPresent" />
+            app:argType="by.it.academy.foodmanager.app.domain.models.ProductDomain" />
     </fragment>
 </navigation>
